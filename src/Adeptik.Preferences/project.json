@@ -1,9 +1,9 @@
-{
+﻿{
   "version": "1.0.0-*",
 
   "title": "Adeptik Preferences",
   "authors": [ "Adeptik" ],
-  "copyright": "Copyright � Adeptik",
+  "copyright": "Copyright © Adeptik",
   "description": "Adeptik Preferences is lightweight library using for storing preferences.",
 
   "packOptions": {

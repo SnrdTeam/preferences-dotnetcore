@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{89E80800-445E-4C47-9419-2AA8EA6DE079}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3B7A0514-9A72-434A-9A4E-89A1A4170B91}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Adeptik.Preferences", "src\Adeptik.Preferences\Adeptik.Preferences.xproj", "{F1B289FA-934D-4A28-8EC0-278AAC2D2623}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{67527B2D-870D-41D3-9DF9-14E5C87F27BA}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Adeptik.Preferences.Tests", "test\Adeptik.Preferences.Tests\Adeptik.Preferences.Tests.xproj", "{7FC8DC6C-82F4-4C5F-B5E6-4F085980BA86}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1B289FA-934D-4A28-8EC0-278AAC2D2623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1B289FA-934D-4A28-8EC0-278AAC2D2623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1B289FA-934D-4A28-8EC0-278AAC2D2623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1B289FA-934D-4A28-8EC0-278AAC2D2623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FC8DC6C-82F4-4C5F-B5E6-4F085980BA86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FC8DC6C-82F4-4C5F-B5E6-4F085980BA86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FC8DC6C-82F4-4C5F-B5E6-4F085980BA86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FC8DC6C-82F4-4C5F-B5E6-4F085980BA86}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F1B289FA-934D-4A28-8EC0-278AAC2D2623} = {89E80800-445E-4C47-9419-2AA8EA6DE079}
+		{7FC8DC6C-82F4-4C5F-B5E6-4F085980BA86} = {67527B2D-870D-41D3-9DF9-14E5C87F27BA}
+	EndGlobalSection
+EndGlobal

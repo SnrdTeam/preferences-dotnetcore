@@ -1,17 +1,14 @@
 # Adeptik Preferences
-A lightweight component for storing any preferences (key-value pairs) in any storage (e.g. database).
 
-## Installation
+Небольшой компонент, позволяющий организовать хранение произвольно структурированных настроек в любом хранилище данных (например, база данных, файл(ы) и т.д).
 
-In project.json file add
+## Использование
 
-```json
-"dependencies": {
-    "Adeptik.Preferences": "1.0.0"
-}
-```
+Добавьте в проект зависимость NuGet "Adeptik.Preferences" либо выполните в Package Manager Console команду
 
-## License
+    Install-Package Adeptik.Preferences
+
+## Лицензия
 
 Copyright 2017 Adeptik
 

@@ -1,6 +1,4 @@
-﻿using Adeptik.Preferences.Exceptions;
-
-namespace Adeptik.Preferences
+﻿namespace Adeptik.Preferences
 {
     /// <summary>
     /// Сервис управления настройками

@@ -14,15 +14,16 @@ namespace Adeptik.Preferences
         private JObject _preferencesJson;
         private readonly object _editLock = new object();
 
+        /// <summary>
+        /// Создание экземпляра класса <see cref="Preferences"/>
+        /// </summary>
+        /// <param name="key">Идентификатор настроек</param>
+        /// <param name="preferencesStore">Хранилище настроек</param>
+        /// <param name="throwIfNotFound">Если true, то генерируется исключение при получении настроек из хранилища</param>
         internal Preferences(string key, IPreferencesStore preferencesStore, bool throwIfNotFound)
         {
-            if (key == null)
-                throw new ArgumentNullException(nameof(key));
-            if (preferencesStore == null)
-                throw new ArgumentNullException(nameof(preferencesStore));
-
-            _key = key;
-            _preferencesStore = preferencesStore;
+            _key = key ?? throw new ArgumentNullException(nameof(key));
+            _preferencesStore = preferencesStore ?? throw new ArgumentNullException(nameof(preferencesStore));
 
             var preferencesJson = _preferencesStore.GetPreferences(key);
             if (throwIfNotFound && preferencesJson == null)
@@ -110,6 +111,10 @@ namespace Adeptik.Preferences
             private readonly Preferences _preferences;
             private readonly JObject _editPreferencesJson;
 
+            /// <summary>
+            /// Создание экземпляра класса <see cref="PreferencesEditor"/>
+            /// </summary>
+            /// <param name="preferences">Редактируемые настройки</param>
             internal PreferencesEditor(Preferences preferences)
             {
                 _preferences = preferences;
